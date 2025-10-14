@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juega con tu Peque | Conecta con tus hijos</title>
+    <meta name="description" content="+500 actividades probadas para transformar tu tiempo familiar. Conexión real con tus hijos through el juego educativo.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #667eea;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 150px 0 100px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Módulos */
+        .modules {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .module-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .module-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Beneficios */
+        .benefits {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .benefit-item h3 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonios */
+        .testimonials {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Juega con tu Peque</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#modulos">Módulos</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Conecta con tus hijos</h1>
+            <p>Transforma tu tiempo familiar con +500 actividades probadas que revolucionan cómo las familias se conectan through el juego</p>
+            <a href="#compra" class="cta-button">Comenzar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Módulos -->
+    <section class="modules" id="modulos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Módulos</h2>
+                <p>7 módulos estructurados +365 actividades listas</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">⚡</div>
+                    <h3>Actividades Express</h3>
+                    <p>Juegos rápidos 5-10 min para días ocupados</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🏠</div>
+                    <h3>Misiones Hogar</h3>
+                    <p>Tareas convertidas en aventuras familiares</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">💖</div>
+                    <h3>Emociones</h3>
+                    <p>Conexión emocional y comunicación</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">📱</div>
+                    <h3>Tecnología Positiva</h3>
+                    <p>Uso consciente de pantallas en familia</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🌳</div>
+                    <h3>Aire Libre</h3>
+                    <p>Exploración y naturaleza</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🔬</div>
+                    <h3>Pequeños Científicos</h3>
+                    <p>Experimentos y curiosidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Resultados Comprobados</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>94%</h3>
+                    <p>Mayor conexión emocional</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>89%</h3>
+                    <p>Menos tiempo de pantalla</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>+3.5h</h3>
+                    <p>Tiempo calidad recuperado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo que dicen las familias</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Transformó completamente nuestro tiempo en familia. Los juegos son fáciles y divertidos!"</p>
+                    <strong>- María G.</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Por fin encontramos actividades que realmente conectan con nuestros hijos. Increíble!"</p>
+                    <strong>- Carlos R.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <h3>Juega con tu Peque</h3>
+            <p>contacto@juegacontupeque.com</p>
+            <p>© 2024 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
